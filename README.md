@@ -15,7 +15,8 @@ https://maikevin.github.io/MMA-Champion/
 # UPDATES
 General Critiques made by users on July 07, 2018
 
-* background color is quite flashy.
-* its barebones
+* Background color is quite flashy. - Randy
+* It's barebones. - Jon
+* Your map seems to cover the logo; it is almost as if you are hiding something. - Anonymous
 
 UPDATES have been performed to the application such as updating the fighters display format and providing a friendlier color scheme.
