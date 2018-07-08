@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width" scale="1">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Kanit:800|Mr+Dafoe" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<title>Learn Fight Skills Around your Area</title>
+	</head>
+	<body>
+		<header id="header" class="content" role="header">
+			<div class="inHeader">
+				<img class="specialLeftImg" src="https://www.tenstickers-ireland.com/wall-stickers/img/preview/boxer-silhouette-wall-sticker-9084.png"/>
+				<p class="specialBox">MMA</p>
+				<p class="specialBoxTwo">Champion</p>
+			</div>
+		</header>
+		<nav role="navigation">
+			<button class="tablink" onclick="openPage('Home', this, 'black')"><i class="material-icons">supervised_user_circle </i> <span>Find a fighter</span></button>
+			<button class="tablink" onclick="openPage('News', this, 'black')" id="defaultOpen"><i class="material-icons"> directions </i> Find a local Gym</button>
+			<button class="tablink" onclick="openPage('Contact', this, 'black')"><i class="material-icons">thumbs_up_down</i> Top Fighting Styles</button>
+			<button class="tablink" onclick="openPage('About', this, 'black')"><i class="material-icons">perm_identity </i> About</button>
+		</nav>
+
+	<div id="Home" class="tabcontent">
+	    <div id="weightOptions">
+			<select id="sexSelectorButton">
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+			</select>
+			<p class="centerIt"> Select your Weight Class </p>
+			<select id="centerIt" name="Weight Class" size="1">
+ 				<option value="Strawweight"> 115 lbs and Below </option>
+  				<option value="Flyweight">115 - 125 lbs</option>
+  				<option value="Bantamweight">125 - 135 lbs</option>
+  				<option value="Featherweight">135 - 145 lbs</option>
+  				<option value="Lightweight">145 - 155 lbs</option>
+  				<option value="Welterweight">155 - 170 lbs</option>
+  				<option value="Middleweight">170 - 185 lbs</option>
+  				<option value="Light_heavyweight">185 - 205 lbs</option>
+  				<option value="Heavyweight">205 lbs+</option>
+			</select>
+			<button class="button" type="submit"  id="findMeButton"><span>Find Rivals</span></button>
+			<br><br/>
+		</div>
+		<div id="fighters" style="overflow-y:scroll; width: 100%; height:500px";>
+		</div>
+			
+	</div>
+<div id="News" class="tabcontent">
+	<div id="pac-inputDiv">
+	
+	<form>
+		<img class="fistSearch" src="https://game-icons.net/icons/lorc/originals/png/000000/transparent/punch-blast.png" float="left" height="100" width="100"> 
+		<input id="pac-input" size="20" style="height:50px; color: black;" type="text" placeholder="FIND YOUR LOCAL GYM"></input>
+		<div id="infowindow-content">
+				<img src="" width="16" height="16" id="place-icon">
+				<span id="place-name"  class="title"></span><br>
+				<span id="place-address"></span>
+		</div>
+	</form>
+	</div>
+	<div id="row">
+		<div class="col-3"; style="overflow-y:scroll; height:400px";>
+		<p id="sideBarTest"></p>
+		</div>
+		<div class="col-9">
+			<div id="map">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="Contact" class="tabcontent">
+	<div id="bigPicture">
+	<form>
+		<input class="showTheSport" type="button" name="choice" value="Muay Thai"/>
+		<input class="showTheSport" type="button" name="choice" value="Brazilian Jiu-jitsu"/> 
+		<input class="showTheSport" type="button" name="choice" value="Karate"/>
+		<input class="showTheSport" type="button" name="choice" value="Kung fu"/> 
+		<input class="showTheSport" type="button" name="choice" value="Taekwondo"/> 
+		<input class="showTheSport" type="button" name="choice" value="Judo"/> 
+		<input class="showTheSport" type="button" name="choice" value="Boxing"/> 
+		<input class="showTheSport" type="button" name="choice" value="Krav Maga"/> 
+		<input class="showTheSport" type="button" name="choice" value="Capoeira"/> 
+	</form>
+	</div>
+	<div id="result" style="overflow-y:scroll; height:100%">
+	</div>
+</div>
+
+	<div id="About" class="tabcontent">
+	  <div class="card">
+	  <img src="https://media.licdn.com/dms/image/C4E03AQEKsRUgGRi69Q/profile-displayphoto-shrink_200_200/0?e=1536192000&v=beta&t=LIZPvHW34qsadR6YTEtpf0Lx4pMu5KxKkwUurPtwUuw" alt="Kevin Mai" style="border-radius:50%">
+	  <h1>Kevin Mai</h1>
+	  <p class="title">Full-stack Developer</p>
+	  <p>Thinkful</p>
+	  <a href="https://www.linkedin.com/in/maikev/" target="_blank"><i class="fa fa-linkedin"></i></a> 
+	  <p><button id="buttonProfile">Contact</button></p>
+	  <div id="quoteGenerator">
+	  </div>
+</div>
+	</div>
+		<!-- <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script> -->
+		<script src="index.js" type="text/javascript"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRUZ-2cLr2mFxvlUOrmACOxBm-OaLqe7k&libraries=geometry,places&callback=initMap" async defer></script>
+	</body>
+</html>
+
+

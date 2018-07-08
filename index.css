@@ -1,0 +1,562 @@
+
+html, body{
+  background: white;
+  overflow-x: hidden;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+nav{
+  margin: 0 auto;
+  margin-top: -22px;
+}
+
+#searchButton{
+	font-size: 48px;
+	color: white;
+}
+
+.navItems{
+  display: inline;
+  color: white;
+  font-size: 24px;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+.navItemsKing{
+  list-style-type: none;
+  margin: 0, auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+
+}
+
+.navItemIcon{
+  width: 100px;
+  height: 100px;
+}
+.navItemLinks:hover{
+  background-color: #111;
+}
+
+.navItemLinks:link{
+  color: black;
+  text-decoration: none;
+}
+
+input[type=text]{
+  border-style: inset;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+input[name=choice]{
+  color: white;
+  font-size: 12px;
+  margin: 0 auto;
+  background: #F2385A;
+  background-color: #f4511e;
+  text-align: center;
+  font-size: 28px;
+  cursor: pointer;
+  float: center;
+  border-radius: 15px;
+  box-shadow: 0 9px #ff3a29;
+}
+
+input[name=choice]:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+input[name=choice]:hover {background-color: #3e8e41}
+
+  /*background: linear-gradient(#93C47D,#D3E7CA);*/
+
+  /*background: linear-gradient(#DCACF1,#EDD5F8);*/
+
+  /*background: linear-gradient(#7DC8E9,#CAE9F6);*/
+
+
+
+  /*background: linear-gradient(#7DE9C8,#BDF4E3);*/
+
+
+  /*background: linear-gradient(#E3BA5C,#F4E3BD);*/
+ 
+
+
+
+  /*background: linear-gradient(#D32A00,#E3775C);*/
+
+
+
+  /*background: linear-gradient(#FFE599,#FFF4D5);*/
+
+
+  /*background: linear-gradient(#D30040,#ED97B1);*/
+
+  /*background: linear-gradient(#00D32A,#7DE992);*/
+
+
+img.wikiImage{
+  max-height: 100px;
+  max-width: 100px;
+  font-size: 25px;
+  border-radius: 50%;
+}
+
+#fighters{
+  font-size: 20px;
+  font-family: "Roboto";
+  color: white;
+  margin: 0, auto;
+  text-align: left;
+
+}
+
+#fighterAppends{
+  float: left;
+  box-sizing: border-box;
+  margin: 0, auto;
+  width: 33.333%;
+  text-align: center;
+}
+
+.theseButtons{
+  border: 3px solid black;
+}
+
+#searchBoxMain{
+	font-size:44px;
+
+}
+
+.specialBox{
+	letter-spacing: 3px;
+	text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  font-size: 175px;
+  font-family: "Roboto";
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.7;
+  margin: 0.2em;
+  position: center;
+  text-shadow: 0.02em 0.02em 0.02em rgba(black, 0.08);
+  filter: drop-shadow(0.045em 0.045em 0.04em rgba(black, 0.21));
+  mix-blend-mode: overlay;
+}
+
+.specialBoxTwo{
+	letter-spacing: 5px;
+	text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  font-size: 50px;
+  font-family: "Mr Dafoe", serif;
+  font-weight: 500;
+  line-height: 0.7;
+  margin: 0.2em;
+  text-shadow: 0.02em 0.02em 0.02em rgba(black, 0.08);
+  text-transform: lowercase;
+  letter-spacing: 0.03em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-5deg);
+}
+
+.specialLeftImg{
+  width: 100px;
+  height: 100%;
+  float: left;
+}
+
+
+#bigPicture{
+  margin: 0, auto;
+  text-align: center;
+  margin-top: -75px;
+}
+
+#centerIt{
+  margin: 0, auto;
+  font-size: 25px;
+}
+
+#fighters{
+  margin: 0, auto;
+  text-align: center;
+}
+
+#weightOptions{
+  margin: 0, auto;
+  font-weight: 50px;
+  text-align: center;
+}
+
+#findMeButton{
+  margin: 0, auto;
+  font-size: 20px;
+  padding-top: 3px;
+}
+
+.content {
+	font-family: 'Bangers';
+	color:white;
+	margin: 0, auto;
+	padding-top: 25px;
+	width: 100%;
+	height: 200px;
+	text-align:center;
+	background:  linear-gradient(#cb2d3e,
+#ef473a);
+  /*
+	background-image: url("http://www.urbasm.com/wp-content/uploads/2014/03/MMA-Fighting-Techniques-.jpg");*/
+	background-size:cover;
+	background-position:  100%, 0;
+	background-repeat:no-repeat;
+	position: relative; 
+	top: -22px;
+}
+
+.inContents{
+	font-weight: 100px;
+}
+
+#quoteGenerator{
+  font-family: 'Lobster';
+  font-size: 15px;
+  margin: 0, auto;
+  text-align: center;
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+#map{
+	position: relative; 
+	width: 100%;
+	height: 400px;
+}
+
+.icons{
+
+}
+
+#row{
+	margin: 0 auto;
+	max-width: 100%;
+  color: white;
+  outline-color: 10px, black;
+  font-family: "Roboto";
+}
+
+.col-3{
+	width: 25%;
+	margin: 0 auto;
+	height: auto;
+	float: left;
+}
+
+.col-9{
+	width: 75%;
+	margin: 0 auto;
+	height: auto;
+	float: left;
+}
+
+#result{
+  font-family: "Roboto";
+  font-size: 25px;
+
+}
+
+footer{
+  margin-top: -5px;
+  background-color: black;
+}
+
+#rightFooter{
+  color: white;
+  float: right;
+  margin: 0px
+  margin-bottom: -10px;
+}
+
+/*Button Animation */
+
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Style tab links */
+.tablink {
+    background:  #464655;
+    color: white;
+    font-size: 500px;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+    float: left;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#Home {
+  background-color: rebeccapurple;
+}
+
+#News {
+  background-color: deeppink;
+  margin: 0 auto;
+
+}
+
+#Contact {
+  background-color:  gold;
+}
+
+#About {
+  background-color: tomato;
+}
+
+/*Profile Card*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    color: black;
+    font-size: 18px;
+}
+
+#buttonProfile {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+#aProfile {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+#buttonProfile:hover, a:hover {
+    opacity: 0.7;
+}
+
+/* Select drop down*/
+.styled-select select {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  height: 29px;
+  padding: 5px;
+  /* If you add too much padding here, the options won't show in IE */
+  width: 268px;
+}
+/*Scroll Bar*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+/*autocomplete*/
+
+#locationField, #controls {
+        position: relative;
+        width: 480px;
+      }
+      #autocomplete {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 99%;
+      }
+      .label {
+        text-align: right;
+        font-weight: bold;
+        width: 100px;
+        color: #303030;
+      }
+      #address {
+        border: 1px solid #000090;
+        background-color: #f0f0ff;
+        width: 480px;
+        padding-right: 2px;
+      }
+      #address td {
+        font-size: 10pt;
+      }
+      .field {
+        width: 99%;
+      }
+      .slimField {
+        width: 80px;
+      }
+      .wideField {
+        width: 200px;
+      }
+      #locationField {
+        height: 20px;
+        margin-bottom: 2px;
+      }
+
+
+
+      /*Auto complete stuff*/
+
+      #description {
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+      }
+
+      #infowindow-content .title {
+        font-weight: bold;
+      }
+
+      #infowindow-content {
+        display: none;
+      }
+
+      #map #infowindow-content {
+        display: inline;
+      }
+
+     
+      #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+      }
+
+      #pac-input {
+        width: 500px;
+        margin: 0, auto;
+        text-align: center;
+
+      }
+
+      #pac-inputDiv{
+        text-align: center;
+        margin: 0, auto;
+        margin-top: -100px;
+      }
+
+      .fistSearch{
+        margin-bottom: -50px;
+        margin-left: -20px;
+      }
+
+/* stars */
+.checked {
+    color: orange;
+}
+
+
+@media only screen and (max-width: 320px) {
+  html, body, header{
+    width: 320px;
+    height: 320%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .col-3 {
+    width: 100%;
+  }
+  .col-9 {
+    width: 100%;
+  }
+  #searchBoxMain {
+    width: 100%;
+  }
+}
