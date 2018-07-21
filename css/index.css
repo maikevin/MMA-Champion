@@ -23,7 +23,7 @@ nav{
   font-size: 24px;
   padding: 14px 16px;
   text-decoration: none;
-  float: left;
+
 }
 
 .navItemsKing{
@@ -111,6 +111,20 @@ img.wikiImage{
   font-size: 25px;
   border-radius: 50%;
 }
+.labels{
+  font-size: 30px;
+  color:white;
+  float:left;
+}
+
+#sexSelectorButton{
+  font-size: 25px;
+  float: middle;
+  width: 300px;
+  height: 30px;
+  position: relative;
+  margin-left: -200px;
+}
 
 #fighters{
   font-size: 20px;
@@ -194,6 +208,10 @@ img.wikiImage{
 #centerIt{
   margin: 0, auto;
   font-size: 25px;
+  float: middle;
+  width: 300px;
+  position: relative;
+  margin-left: -220px;
 }
 
 #fighters{
@@ -209,8 +227,8 @@ img.wikiImage{
 
 #findMeButton{
   margin: 0, auto;
-  font-size: 20px;
-  padding-top: 3px;
+  font-size: 30px;
+  padding-top: 1px;
 }
 
 .content {
@@ -255,30 +273,12 @@ img.wikiImage{
 	height: 400px;
 }
 
-.icons{
-
-}
-
 #row{
 	margin: 0 auto;
 	max-width: 100%;
   color: white;
   outline-color: 10px, black;
   font-family: "Roboto";
-}
-
-.col-3{
-	width: 25%;
-	margin: 0 auto;
-	height: auto;
-	float: left;
-}
-
-.col-9{
-	width: 75%;
-	margin: 0 auto;
-	height: auto;
-	float: left;
 }
 
 #result{
@@ -295,7 +295,7 @@ footer{
 #rightFooter{
   color: white;
   float: right;
-  margin: 0px
+  margin: 0px;
   margin-bottom: -10px;
 }
 
@@ -372,20 +372,26 @@ footer{
 
 #Home {
   background-color: rebeccapurple;
+  margin: 0 auto;
+  height: 150%
 }
 
 #News {
   background-color: deeppink;
   margin: 0 auto;
-
+  height: 150%
 }
 
 #Contact {
   background-color:  gold;
+  margin: 0 auto;
+  height: 110%;
 }
 
 #About {
   background-color: tomato;
+  margin: 0 auto;
+  height: 110%;
 }
 
 /*Profile Card*/
@@ -394,6 +400,7 @@ footer{
     max-width: 300px;
     margin: auto;
     text-align: center;
+    
 }
 
 .title {
@@ -442,11 +449,13 @@ footer{
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
     border-radius: 10px;
+    box-shadow: 0;
 }
  
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    box-shadow: 0;
 }
 
 /*autocomplete*/
@@ -548,7 +557,7 @@ footer{
     height: 320%;
   }
 }
-
+/*
 @media only screen and (max-width: 640px) {
   .col-3 {
     width: 100%;
@@ -559,4 +568,6 @@ footer{
   #searchBoxMain {
     width: 100%;
   }
+  
 }
+*/

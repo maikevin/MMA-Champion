@@ -351,11 +351,11 @@ $(document).ready(function(){
           let womenWeightClass = "Women_" + selectedWeight;
           if (((currentWeightClass) === selectedWeight) && (data[i].fighter_status === "Active") && (sexSelector === "Male")){
               total_fighters++;
-              var imgurl = '<img class="wikiImage" src=' + data[i].profile_image + '>';
+              var imgurl = '<img class="wikiImage" src=' + data[i].profile_image + ' + alt=' + data[i].first_name + ' >';
               $('#fighters').append(
-                ' ' + imgurl + ' ' +data[i].weight_class + ' ' + data[i].first_name + ' ' + data[i].last_name +'</td> <td>' 
-                 +  data[i].wins +  ':' + data[i].losses + ':' + data[i].draws + '');
-        
+                '<div id="fighterAppends" class="col-4">' + imgurl + ' ' +data[i].weight_class + ' ' + data[i].first_name + ' ' + data[i].last_name +' ' 
+                 +  data[i].wins +  ':' + data[i].losses + ':' + data[i].draws + '</div>');
+        // text in span etc.
               $('#fighters').hide();
           }
 
@@ -363,21 +363,23 @@ $(document).ready(function(){
               total_fighters++;
               var imgurl = '<img class="wikiImage" src=' + data[i].profile_image + '>';
               $('#fighters').append(
-                '<div id="fighterAppends">' + imgurl + ' ' +data[i].weight_class + ' ' + data[i].first_name + ' ' + data[i].last_name +'</td> <td>' 
+                '<div id="fighterAppends" class="col-4">' + imgurl + ' ' +data[i].weight_class + ' ' + data[i].first_name + ' ' + data[i].last_name +' ' 
                  +  data[i].wins +  ':' + data[i].losses + ':' + data[i].draws + '</div>');
    
               $('#fighters').hide();
           }
 
           else{
-            notMatchedFighters++;
+        
             if(notMatchedFighters === 0){ 
-              $('#fighters').append('No Fighters in this Weight Division');
-              console.log(notMatchedFighters)
             }
           }
 
         }
+      if(notMatchedFighters === 0){ 
+        $('#fighters').append('No Fighters in this Weight Division');
+          
+      }
       $('#fighters').fadeIn(1000);
       $('#fighterTable').fadeIn(1000);
 
