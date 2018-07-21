@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width" scale="1">
-		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/float-grid.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
@@ -28,13 +29,15 @@
 			<button class="tablink" onclick="openPage('About', this, 'black')"><i class="material-icons">perm_identity </i> About</button>
 		</nav>
 
-	<div id="Home" class="tabcontent">
+	<div id="Home" class="tabcontent" name="Match a Fighter">
 	    <div id="weightOptions">
+			<label class="labels" for="sexSelectorButton">Choose a Gender</label>
 			<select id="sexSelectorButton">
 				<option value="Male">Male</option>
 				<option value="Female">Female</option>
 			</select>
-			<p class="centerIt"> Select your Weight Class </p>
+			<br><br/>
+			<label class="labels" for ="centerIt">Select your Weight</label>
 			<select id="centerIt" name="Weight Class" size="1">
  				<option value="Strawweight"> 115 lbs and Below </option>
   				<option value="Flyweight">115 - 125 lbs</option>
@@ -46,18 +49,19 @@
   				<option value="Light_heavyweight">185 - 205 lbs</option>
   				<option value="Heavyweight">205 lbs+</option>
 			</select>
-			<button class="button" type="submit"  id="findMeButton"><span>Find Rivals</span></button>
+			<br><br/>
+			<button class="button" type="submit"  id="findMeButton" name="find Rival Button"><span>Find Rivals</span></button>
 			<br><br/>
 		</div>
 		<div id="fighters" style="overflow-y:scroll; width: 100%; height:500px";>
 		</div>
 			
 	</div>
-<div id="News" class="tabcontent">
+<div id="News" class="tabcontent" name="Find a Gym">
 	<div id="pac-inputDiv">
 	
 	<form>
-		<img class="fistSearch" src="https://game-icons.net/icons/lorc/originals/png/000000/transparent/punch-blast.png" float="left" height="100" width="100"> 
+		<img class="fistSearch" src="https://game-icons.net/icons/lorc/originals/png/000000/transparent/punch-blast.png" float="left" height="100" width="100" alt="fist"> 
 		<input id="pac-input" size="20" style="height:50px; color: black;" type="text" placeholder="FIND YOUR LOCAL GYM"></input>
 		<div id="infowindow-content">
 				<img src="" width="16" height="16" id="place-icon">
@@ -67,17 +71,17 @@
 	</form>
 	</div>
 	<div id="row">
-		<div class="col-3"; style="overflow-y:scroll; height:400px";>
+		<div class="col-4"; style="overflow-y:scroll; height:400px";>
 		<p id="sideBarTest"></p>
 		</div>
-		<div class="col-9">
+		<div class="col-66">
 			<div id="map">
 			</div>
 		</div>
 	</div>
 </div>
 
-<div id="Contact" class="tabcontent">
+<div id="Contact" class="tabcontent" name="Wikipedia information for martial arts">
 	<div id="bigPicture">
 	<form>
 		<input class="showTheSport" type="button" name="choice" value="Muay Thai"/>
@@ -95,7 +99,7 @@
 	</div>
 </div>
 
-	<div id="About" class="tabcontent">
+	<div id="About" class="tabcontent" name="About me page">
 	  <div class="card">
 	  <img src="https://media.licdn.com/dms/image/C4E03AQEKsRUgGRi69Q/profile-displayphoto-shrink_200_200/0?e=1536192000&v=beta&t=LIZPvHW34qsadR6YTEtpf0Lx4pMu5KxKkwUurPtwUuw" alt="Kevin Mai" style="border-radius:50%">
 	  <h1>Kevin Mai</h1>
